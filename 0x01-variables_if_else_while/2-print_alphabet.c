@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <string.h>
-int main()
+int main(void)
 {
 char c;
-for (c = 'A'; c <= 'Z'; c++)
+for (c = 'a'; c <= 'z'; c++)
 {
-putchar(c);
+putchar (c);
 }
 return (0);
 }
