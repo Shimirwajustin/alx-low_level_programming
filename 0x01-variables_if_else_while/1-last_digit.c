@@ -3,6 +3,11 @@
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
+/**
+*main - determines whether randomly generated number is odd or even
+*
+*Return: 0 if program executes succesfuly
+*/
 int main(void)
 {
 	int n, last_number;
@@ -14,9 +19,9 @@ int main(void)
     if (last_number > 5)
         printf("Last digit of %d is %d and is greater than 5\n", n, last_number);
     else if (last_number == 0)
-        printf("Last digit of %d is %d and is 0\n", last_number);
+            printf("Last digit of %d is %d and is 0\n", last_number);
     else if (last_number < 6 && last_number == 0)
-        printf("Last digit of %d is %d and is less than 6 and not 0", n, last_number);
+            printf("Last digit of %d is %d and is less than 6 and not 0", n, last_number);
     
     return (0);
 }
