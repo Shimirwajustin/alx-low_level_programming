@@ -14,9 +14,9 @@
 int main(void)
 {
 int c, h;
-for (c = 0; c < 8; c++)
+for (c = 0; c <= 8; c++)
 {
-for (h = c + 1; h < 9; h++)
+for (h = c + 1; h <= 9; h++)
 
 {
 putchar((c % 10) + '0');
