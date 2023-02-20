@@ -13,7 +13,7 @@
  */
 int main(void)
 {
-int c, h,j;
+int c, h, j;
 for (c = 0; c < 8; c++)
 {
 for (h = c + 1; h < 9; h++)
