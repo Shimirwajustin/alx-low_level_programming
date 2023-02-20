@@ -1,4 +1,5 @@
-/*file name = 102-print_comb5.c
+/*
+*file name = 102-print_comb5.c
 *
 *Auth: Shimirwa Justin
 */
