@@ -21,7 +21,7 @@ putchar((c / 10) + '0');
 putchar((c % 10) + '0');
 putchar(' ');
 putchar((h / 10) + '0');
-putchar((c % 10) + '0');
+putchar((h % 10) + '0');
 if (c == 98 && h == 99)
 continue;
 putchar(',');
