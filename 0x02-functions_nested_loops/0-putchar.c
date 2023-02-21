@@ -2,9 +2,9 @@
 #include "main.h"
 /* betty style doc for function main goes there */
 /**
-*main -main function 
+*main -main function
 *putchar:print the alphabets putchar
-*Return: Always 0 
+*Return: Always 0
 */
 int main(void)
 {
