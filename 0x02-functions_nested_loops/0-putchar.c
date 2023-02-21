@@ -1,8 +1,9 @@
+
 #include "main.h"
 /* betty style doc for function main goes there */
 /**
-*main - main function 
-*_putchar:print the alphabets putchar
+*main -main function 
+*putchar:print the alphabets putchar
 *Return: Always 0 
 */
 int main(void)
