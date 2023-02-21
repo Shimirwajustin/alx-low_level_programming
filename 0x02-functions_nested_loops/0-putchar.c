@@ -1,17 +1,10 @@
-/*
-*
-*
-* On error, -1 is returned, and errno is set appropriately.
-*
-*/  
 #include "main.h"
+/* betty style doc for function main goes there */
 /**
-*_putchar: print putchar alphabetic putchar 
-*return : always 0
+*main:  -1 is returned, and errno is set appropriately.
 *
+*Return: 0 if program executes succesfuly
 */
-
-
 int main(void)
 {
 _putchar('_');
