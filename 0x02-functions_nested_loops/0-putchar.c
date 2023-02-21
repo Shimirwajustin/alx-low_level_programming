@@ -1,7 +1,7 @@
 #include "main.h"
 /* betty style doc for function main goes there */
 /**
-*main:  -1 is returned, and errno is set appropriately.
+*main - -1 is returned, and errno is set appropriately. 
 *
 *Return: 0 if program executes succesfuly
 */
