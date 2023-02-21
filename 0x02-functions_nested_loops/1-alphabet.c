@@ -1,7 +1,7 @@
 #include "main.h"
 /* betty style doc for function main goes there */
 /**
-*main -main function
+*print_alphabet -alphabet function
 *putchar:print the alphabets in lowercase
 *Return: Always 0
 */
