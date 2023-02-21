@@ -1,9 +1,9 @@
 #include "main.h"
 /* betty style doc for function main goes there */
 /**
-*main - it rreturns -1,and errno is set appropriately. 
-*
-*Return: 0 if program executes succesfuly
+*main - main function 
+*_putchar:print the alphabets putchar
+*Return: Always 0 
 */
 int main(void)
 {
