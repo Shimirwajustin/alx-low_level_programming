@@ -2,6 +2,8 @@
 /* betty style doc for function main goes there */
 /**
 *_islower - alphabet function
+*@c: parameter to be printed
+*
 *putchar:print the alphabets in lowercase
 *Return: Always 0
 */
