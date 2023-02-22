@@ -19,7 +19,7 @@ _putchar(k / 10 + '0');
 _putchar(k % 10 + '0');
 _putchar(':');
 _putchar(j / 10 + '0');
-_putchar(j % 10 + '0')
+_putchar(j % 10 + '0');
 _putchar('\n');
 }
 }
