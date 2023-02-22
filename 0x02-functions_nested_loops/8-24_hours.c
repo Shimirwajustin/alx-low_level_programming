@@ -11,7 +11,7 @@ void jack_bauer(void)
 {
 int k;
 int j;
-for (k =o; k < 24; k++)
+for (k = 0; k < 24; k++)
 {
 for (j = 0; j < 60; j++)
 {
