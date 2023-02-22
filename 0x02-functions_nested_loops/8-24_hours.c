@@ -2,8 +2,7 @@
 
 /* betty style doc for function main goes there */
 /**
-*
-*jack_bauer -prints 24hrs time
+*jack_bauer - prints 24hrs time
 *
 *Return: always 0
 */
