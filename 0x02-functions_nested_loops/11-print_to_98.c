@@ -35,6 +35,6 @@ printf("%d, ", i);
 }
 printf("\n");
 }
-else if (i = 98)
+else if (n = 98)
 printf("%d, ", n);
 }
