@@ -24,7 +24,7 @@ _putchar(',');
 _putchar(' ');
 return (0);
 }
-else (n < 0)
+else
 {
 _putchar('-');
 _putchar(',');
