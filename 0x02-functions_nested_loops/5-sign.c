@@ -3,7 +3,6 @@
 /* betty style doc for function main goes there */
 /**
 *_isalpha - alphabet function
-*@n: character to be printed
 *
 *putchar:print the sign
 *Return: Always 0
