@@ -12,7 +12,7 @@ int a = 0;
 int b;
 for (a = 0; a < 10; a++)
 {
-for (b =0; b < 15; b++)
+for (b = 0; b < 15; b++)
 {
 if (b > 9)
 _putchar((b / 10) + '0');
