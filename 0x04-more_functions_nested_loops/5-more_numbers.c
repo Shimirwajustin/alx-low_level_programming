@@ -3,7 +3,7 @@
 
 /*betty style*/
 /**
-*void more_numbers - a function that prints 10 times the numbers
+*more_numbers - a function that prints 10 times the numbers
 *Return: void
 */
 void more_numbers(void)
