@@ -19,8 +19,16 @@ else
 {
 for (a = 0; a < n; a++)
 {
-_putchar('\');
+if (n > 1)
+{
+int b;
+for (b = 0; b < a; b++)
+{
+_putchar(' ');
 }
+_putchar('\\');
 _putchar('\n');
+}
+}
 }
 }
