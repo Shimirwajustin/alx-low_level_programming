@@ -3,18 +3,14 @@
 
 /*betty style*/
 /**
-* main - check the code.
-*
-* Return: Always 0.
+*_isupper - upper case letters
+*@c: the character we have to check
+*Return: 1 and 0
 */
 int _isupper(int c)
 {
-char c;
-
-c = 'A';
-_isupper(c));
-return (1)
-c = 'a';
-_isupper(c));
+if (c >= 'A' && c <= 'Z')
+return (1);
+else
 return (0);
 }
