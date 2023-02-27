@@ -1,13 +1,13 @@
 /**
 *swap_int - a function that takes a pointer
-*@a: integer
-*@b: integer
+*@a: first variable to be swaped
+*@b: second variable to be swaped 
 * return: void
 */
 void swap_int(int *a, int *b)
 {
 int c = *a;
 int d = *b;
-*a=d;
-*b=d;
+*a = d;
+*b = c;
 }
