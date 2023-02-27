@@ -1,4 +1,3 @@
-#include "main.h"
 /**
 * _puts - a function that prints a string
 *@str: a variable used to print string
