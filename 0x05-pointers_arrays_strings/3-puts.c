@@ -1,5 +1,5 @@
 /**
-* _strlen - a function that returns the length of a string
+* _puts - a function that prints a string
 *@str: a variable used to print string
 * Return: str.
 */
