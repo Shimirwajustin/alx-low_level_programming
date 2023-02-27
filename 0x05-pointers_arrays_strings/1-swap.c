@@ -6,8 +6,8 @@
 */
 void swap_int(int *a, int *b)
 {
-_putchar("a=%d, b=%d\n", a, b);
-swap_int(&a, &b);
-_putchar("a=%d, b=%d\n", a, b);
-return (0);
+int c=*a;
+int d=*b;
+*a=d;
+*b=d;
 }
