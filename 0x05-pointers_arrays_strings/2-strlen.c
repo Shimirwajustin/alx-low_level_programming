@@ -5,9 +5,11 @@
 */
 int _strlen(char *s)
 {
-char *str;
-int len;
-str = "My first strlen!";
-len = _strlen(s);
-return (0);
+int leng;
+leng = 0;
+while (*s != '\0')
+{leng++;
+s++;
+}
+return (leng);
 }
