@@ -17,6 +17,6 @@ for ( ; b < a ; b++)
 {
 dest[b] = src[b];
 }
-dest[l] = '\0';
+dest[a] = '\0';
 return (dest);
 }
