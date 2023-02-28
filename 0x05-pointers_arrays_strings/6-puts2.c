@@ -16,5 +16,5 @@ while (a < leng)
 _putchar(str[0]);
 a = a + 2;
 }
--putchar('\n');
+_putchar('\n');
 }
