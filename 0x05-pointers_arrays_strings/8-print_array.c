@@ -11,7 +11,7 @@ int pass[100];
 int a, sum, b;
 sum = 0;        
 srand(time(NULL));
-for a = 0; a < 100; a++)
+for (a = 0; a < 100; a++)
 {
 pass[a] = rand() % 78;
 sum += (pass[a] + '0');
