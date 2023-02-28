@@ -13,4 +13,6 @@ char *_strcpy(char *dest, char *src);
 void _puts(char *);
 int _putchar(char c);
 void puts2(char *);
+_puts(str);
+puts2(str);
 #endif
