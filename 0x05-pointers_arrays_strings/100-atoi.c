@@ -15,14 +15,14 @@ int d = 0;
 int f = 0;
 int e = 0;
 while (s[d] != '\0')
-len++;
+d++;
 while (a < d && f == 0)
 {
 if (s[a] == '-')
 ++d;
 if (s[a] >= '0' && s[a] <= '9')
 {
-digit = s[a] - '0';
+e = s[a] - '0';
 if (b % 2)
 e = -e;
 c = c * 10 + e;
