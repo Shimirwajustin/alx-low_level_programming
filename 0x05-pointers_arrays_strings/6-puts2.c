@@ -1,26 +1,26 @@
 #include "main.h"
 /**
-*puts2 - a function should print only one character
-*@str: string
+*puts2- a function that print only one character
+*@str:string
 *return: void
 */
 void puts2(char *str)
 {
-int leng = 0;
+int long = 0;
 int a = 0;
-char *y = str;
-int b;
-while (*y != '\0')
+char *b = str;
+int c;
+while (*b != '\0')
 {
-y++;
-leng++;
+b++;
+long++;
 }
-a = leng - 1;
-for (b = 0; b <= a; b++)
+a = long - 1;
+for (c = 0; c <= a; c++)
+{if (c % 2 == 0)
 {
-if (b % 2 == 0)
-_putchar(str[0]);
-a = a + 2;
+_putchar(str[c]);
+}
 }
 _putchar('\n');
 }
