@@ -1,22 +1,24 @@
 #include "main.h"
+
 /**
-*puts2- a function that print only one character
-*@str:string
-*return: void
+* puts2 - function should print only one character
+* @str: string
+* Return:  void
 */
+
 void puts2(char *str)
 {
-int long = 0;
+int rango = 0;
 int a = 0;
 char *b = str;
 int c;
 while (*b != '\0')
 {
 b++;
-long++;
+rango++;
 }
-a = long - 1;
-for (c = 0; c <= a; c++)
+a = rango - 1;
+for (c = 0 ; c <= a ; c++)
 {
 if (c % 2 == 0)
 {
