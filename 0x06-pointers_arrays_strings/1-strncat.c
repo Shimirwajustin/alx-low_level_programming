@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 /**
-*_strncat - a function that concatenates two strings.
+* _strncat - a function that concatenates two strings.
 *@dest: string
 *@src: string
 *@n: integer
@@ -10,15 +10,18 @@
 */
 char *_strncat(char *dest, char *src, int n)
 {
-int a = 0;
-int b = 0;
-while (dest[a] != '\0')
+int a;
+int b;
+a = 0;
+while (dest[i] != '\0')
 {
 a++;
 }
-while (src[b] != '\0')
-{
-dest[a++] = src[b++];
+b = 0;
+while (b < n && src[b] != '\0')
+{ 
+a++;
+b++;
 }
 dest[a] = '\0';
 return (dest);
