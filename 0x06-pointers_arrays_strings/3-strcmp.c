@@ -5,7 +5,7 @@
 *_strcmp - compare string values
 *@s1: input value
 *@s2: input value
-*return: 0
+*return: s1 and s2 arrays
 */
 int _strcmp(char *s1, char *s2)
 {
