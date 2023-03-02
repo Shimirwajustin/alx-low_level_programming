@@ -15,7 +15,7 @@ while (dest[a] != '\0')
 {
 a++;
 }
-while (src[k] != '\0')
+while (src[b] != '\0')
 {
 dest[a++] = src[b++];
 }
