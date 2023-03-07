@@ -1,16 +1,16 @@
 #include "main.h"
 /**
-*_strbrk - entry point
+*_strpbrk - a function
 *@s: input
 *@accept: input
-*return: always 0
+*Return: always 0(success)
 */
 char *_strpbrk(char *s, char *accept)
 {
 int k;
 while (*s)
 {
-for (k =0  ; accept[k]; k++)
+for (k = 0; accept[k]; k++)
 {
 if (*s == accept[k])
 return (s);
