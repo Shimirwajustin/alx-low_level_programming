@@ -8,11 +8,7 @@
 */
 int _strlen_recursion(char *s)
 {
-unsigned int b = 0;
-while (*s != '\0')
-{
-b++;
-s++;
-}
+int b = _putchar(s);
+_putchar(b);
 return b;
 }
