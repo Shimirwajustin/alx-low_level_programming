@@ -18,7 +18,7 @@ return (actual_number(n, n - 1));
 *@a: input
 *Return: not always 0
 */
-int actual_numbeer(int n, int a)
+int actual_number(int n, int a)
 {
 if (a == 1)
 return (1);
