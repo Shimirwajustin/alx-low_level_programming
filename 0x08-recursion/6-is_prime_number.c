@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*is_prime_number a function
+*is_prime_number - a function
 *@a: input
 * @n: input
 *Return: not always 0
