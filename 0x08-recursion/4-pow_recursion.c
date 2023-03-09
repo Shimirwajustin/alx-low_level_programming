@@ -15,7 +15,8 @@ return (-1);
 }
 else
 {
-int result = pow(x, y);
+int result;
+result = pow(x, y);
 _putchar(result);
 }
 return (0);
