@@ -10,14 +10,8 @@
 int _pow_recursion(int x, int y)
 {
 if (y < 0)
-{
 return (-1);
-}
-else
-{
-int result;
-result = pow(x, y);
-_putchar(result);
-}
-return (0);
+if (y == 0)
+return (1);
+return (x * _power_recursion(y - 1);
 }
