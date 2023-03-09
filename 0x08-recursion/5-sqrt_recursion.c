@@ -4,6 +4,7 @@
 /**
 *_sqrt_recursion - a function
 *@n: input
+*@a: input
 *Return: not always 0
 */
 int actual_sqrt_recursion(int n, int a);
