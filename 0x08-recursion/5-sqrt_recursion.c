@@ -19,6 +19,7 @@ return (actual_sqrt_recursion(n, 0));
 *natural number
 *@n: input
 *@a: input
+*@a: input
 *Return: square root
 */
 int actual_sqrt_recursion(int n, int a)
