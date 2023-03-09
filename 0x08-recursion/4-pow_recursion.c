@@ -14,7 +14,7 @@ return (-1);
 }
 else
 {
-int resurt = power(x, y);
+int resurt = pow(x, y);
 _putchar(result);
 }
 return (0);
