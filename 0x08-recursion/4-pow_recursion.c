@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <math.h>
 /**
 *_pow_recursion - a function
 *@x: input
