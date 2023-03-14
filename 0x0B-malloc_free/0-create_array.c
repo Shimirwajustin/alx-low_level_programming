@@ -9,9 +9,8 @@
 */
 char *create_array(unsigned int size, char c)
 {
-char i;
 if (size == 0)
 return (NULL);
-else if (i == c)
+else if (size > 0 || c >= 0)
 return (size);
 }
