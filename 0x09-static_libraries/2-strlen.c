@@ -7,10 +7,9 @@ int _stren(char *s)
 {
 int leng;
 leng = 0;
-while (*s != '\0')
+while (s[leng] != '\0')
 {
 leng++;
-s++;
 }
 return (leng);
 }
