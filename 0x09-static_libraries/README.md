@@ -1,1 +1,2 @@
-Rad me file
+#!/bin/bash
+Read me file
