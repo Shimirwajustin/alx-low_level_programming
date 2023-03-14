@@ -17,4 +17,5 @@ else if (size > 0 || c >= 0)
 {
 return size;
 }
+return (0);
 }
