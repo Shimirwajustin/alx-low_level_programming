@@ -5,7 +5,7 @@
 *@n: Number of bytes
 *Return: memory copy
 */
-#include "main"
+#include "main.h"
 #include <stdio.h>
 #include <string.h>
 char *_memcpy(char *dest, char *src, unsigned int n)
