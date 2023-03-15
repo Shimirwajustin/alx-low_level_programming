@@ -17,7 +17,7 @@ l++;
 p++;
 }
 if (*p == '\0')
-return (haystarck);
+return (haystack);
 }
 return (0);
 }
