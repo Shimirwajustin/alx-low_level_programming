@@ -9,7 +9,7 @@ char *_strcpy(char *dest, char *src)
 {
 int a;
 int b;
-while (*src[a] != '\0')
+while (*(src + a) != '\0')
 {
 a++;
 }
