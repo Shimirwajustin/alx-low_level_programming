@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 /**
-*_atoi - a function
+*shimirwa - a function
 *@s: character
 *Return: 0 and n
 */
@@ -22,10 +22,10 @@ l++;
 
 while (c < l && f == 0)
 {
-if(s[c] == '-')
+if (s[c] == '-')
 ++d;
 
-if(s[c] >= '0' && s[c] <= '9')
+if (s[c] >= '0' && s[c] <= '9')
 {
 t = s[c] - '\0';
 
@@ -34,7 +34,7 @@ t = -t;
 n = n * 10 + t;
 f = 1;
 
-if(s[c + 1] < '0' || s[c + 1] > '9')
+if (s[c + 1] < '0' || s[c + 1] > '9')
 break;
 f = 0;
 }
@@ -52,19 +52,18 @@ return (n);
 *@argv: argument of an array
 *Return: not always 0 and 1(Error)
 */
-int shimirwa(char *s);
 int main(int argc, char argv[])
 {
 int a, b;
 int r;
-if(argc < 3 || argc > 3)
+if (argc < 3 || argc > 3)
 {
 printf("Error\n");
-return(1);
+return (1);
 }
-a = atoi (argv[1]);
-b = atoi (argv[2]);
-r = a * b;
+a = shimirwa(argv[1]);
+b = shimirwa(argv[2]);
+r = a *b;
 printf("%d", r);
 return (0);
 }
