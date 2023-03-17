@@ -26,7 +26,7 @@ if (s[c] == '-')
 
 if (s[c] >= '0' && s[c] <= '9')
 {
-t = s[c] - '\0';
+t = s[c] - '0';
 
 if (d % 2)
 t = -t;
@@ -53,8 +53,7 @@ return (n);
 */
 int main(int argc, char *argv[])
 {
-int a, b;
-int r;
+int a, b, solution;
 if (argc < 3 || argc > 3)
 {
 printf("Error\n");
@@ -62,7 +61,7 @@ return (1);
 }
 a = shimirwa(argv[1]);
 b = shimirwa(argv[2]);
-r = a * b;
-printf("%d\n", r);
+solution = a * b;
+printf("%d\n", solution);
 return (0);
 }
