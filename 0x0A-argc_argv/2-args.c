@@ -3,7 +3,7 @@
 #include <string.h>
 /**
 *main - function
-*@agrc: an argument
+*@argc: an argument
 *@argv: an argument of array
 *Return: always 0
 */
