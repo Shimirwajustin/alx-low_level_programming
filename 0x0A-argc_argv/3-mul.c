@@ -52,6 +52,7 @@ return (n);
 *@argv: argument of an array
 *Return: not always 0 and 1(Error)
 */
+int shimirwa(char *s);
 int main(int argc, char argv[])
 {
 int a, b;
@@ -61,8 +62,8 @@ if(argc < 3 || argc > 3)
 printf("Error\n");
 return(1);
 }
-a = shimirwa(argv[1]);
-b = shimirwa(argv[2]);
+a = atoi (argv[1]);
+b = atoi (argv[2]);
 r = a * b;
 printf("%d", r);
 return (0);
