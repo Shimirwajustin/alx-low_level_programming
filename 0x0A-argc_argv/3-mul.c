@@ -52,7 +52,7 @@ return (n);
 *@argv: argument of an array
 *Return: not always 0 and 1(Error)
 */
-int main(int argc, char argv[])
+int main(int argc, char *argv[])
 {
 int a, b;
 int r;
@@ -63,7 +63,7 @@ return (1);
 }
 a = shimirwa(argv[1]);
 b = shimirwa(argv[2]);
-r = a *b;
+r = a * b;
 printf("%d", r);
 return (0);
 }
