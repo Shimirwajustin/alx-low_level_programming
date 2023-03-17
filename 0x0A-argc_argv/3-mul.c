@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-#include <string.h>
 /**
 *shimirwa - a function
 *@s: character
@@ -64,6 +63,6 @@ return (1);
 a = shimirwa(argv[1]);
 b = shimirwa(argv[2]);
 r = a * b;
-printf("%d", r);
+printf("%d\n", r);
 return (0);
 }
