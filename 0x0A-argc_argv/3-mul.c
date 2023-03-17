@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
-*shimirwa - a function
+*shimirwa - a function to  convert string into an integer
 *@s: character
 *Return: 0 and n
 */
