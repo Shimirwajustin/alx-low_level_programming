@@ -49,7 +49,7 @@ return (n);
 *main - a function
 *@argc: argument
 *@argv: argument of an array
-*Return: not always 0 and 1(Error)
+*Return: not always 0, 1 anError
 */
 int main(int argc, char *argv[])
 {
