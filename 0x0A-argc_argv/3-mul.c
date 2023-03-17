@@ -6,39 +6,39 @@
 *@s: character
 *Return: 0 and n
 */
-int _atoi(char *s)
+int shimirwa(char *s)
 {
-int i, d, n, len, f, digit;
+int c, d, n, l, f, t;
 
-i = 0;
+c = 0;
 d = 0;
 n = 0;
-len = 0;
+l = 0;
 f = 0;
-digit = 0;
+t = 0;
 
-while (s[len] != '\0')
-len++;
+while (s[l] != '\0')
+l++;
 
-while (i < len && f == 0)
+while (c < l && f == 0)
 {
-if(s[i] == '-')
+if(s[c] == '-')
 ++d;
 
-if(s[i] >= '0' && s[i] <= '9')
+if(s[c] >= '0' && s[c] <= '9')
 {
-digit = s[i] - '0';
+t = s[c] - '\0';
 
 if (d % 2)
-digit = -digit;
-n = n * 10 + digit;
+t = -t;
+n = n * 10 + t;
 f = 1;
 
-if(s[i + 1] < '0' || s[i + 1] > '9')
+if(s[c + 1] < '0' || s[c + 1] > '9')
 break;
 f = 0;
 }
-i++;
+c++;
 }
 
 if (f == 0)
@@ -50,20 +50,20 @@ return (n);
 *main - a function
 *@argc: argument
 *@argv: argument of an array
-*Return: always 0, 1(Error)
+*Return: not always 0 and 1(Error)
 */
 int main(int argc, char argv[])
 {
 int a, b;
-int result;
+int r;
 if(argc < 3 || argc > 3)
 {
 printf("Error\n");
 return(1);
 }
-a = _atoi(argv[1]);
-b = _atoi(argv[2]);
-result = a * b;
-printf("%d", result);
+a = shimirwa(argv[1]);
+b = shimirwa(argv[2]);
+r = a * b;
+printf("%d", r);
 return (0);
 }
