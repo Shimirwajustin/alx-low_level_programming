@@ -61,7 +61,7 @@ return (1);
 }
 a = shimirwa(argv[1]);
 b = shimirwa(argv[2]);
-solution = a * b;
+solution = a *b;
 printf("%d\n", solution);
 return (0);
 }
