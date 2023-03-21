@@ -1,5 +1,5 @@
 #include "main.h"
-#include <string.h>
+#include <stdlib.h>
 #include <stdio.h>
 /**
 *create_array - function
@@ -9,9 +9,13 @@
 */
 char *create_array(unsigned int size, char c)
 {
-int size[10];
-if (size == 0)
+char *j;
+unsigned int s;
+j = malloc(sizeof(char) * size);
+
+if (size == 0 || j == NULL)
 return (NULL);
-else if (size > 0 || c >= 0)
-return size;
+for (s = 0; s < size; s++)
+j[s] = c;
+return (j);
 }
