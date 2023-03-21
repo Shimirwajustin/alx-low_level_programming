@@ -5,7 +5,7 @@
 *create_array - function
 *@size: input
 *@c: input
-*Retirn: not always 0
+*Return: not always 0
 */
 char *create_array(unsigned int size, char c)
 {
