@@ -5,13 +5,12 @@
 *@s: pointer
 *Return: not always 0
 */
-char **strtow(char *str)
 int cout_word(char *s)
 {
 int shim, t, n;
 shim = 0;
 n = 0;
-for (t = 0; str[t] != '\0'; t++)
+for (t = 0; s[t] != '\0'; t++)
 {
 if (s[t] == ' ')
 shim = 0;
