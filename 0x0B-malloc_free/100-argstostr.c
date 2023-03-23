@@ -26,7 +26,7 @@ b++;
 d++;
 a++;
 }
-just = malloc((sizeof(char) * d) + 1);
+just = malloc((sizeof(char) * d) +1);
 if (just == NULL)
 return (NULL);
 a = 0;
