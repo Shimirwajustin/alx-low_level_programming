@@ -13,3 +13,12 @@ if (just == NULL)
 exit(98);
 return (just);
 }
+/**
+*main - mmain function
+*Return: 0
+*/
+int main()
+{
+*malooc();
+return (0);
+}
