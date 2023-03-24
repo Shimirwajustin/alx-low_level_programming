@@ -14,7 +14,7 @@ int a, shim;
 if (min > max)
 return (NULL);
 shim = max - min + 1;
-just = malloc(sixeof(int) * shim);
+just = malloc(sizeof(int) * shim);
 
 if (just == NULL)
 return (NULL);
