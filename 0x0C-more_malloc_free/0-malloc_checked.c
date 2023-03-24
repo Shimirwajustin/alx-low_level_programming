@@ -13,12 +13,3 @@ if (just == NULL)
 exit(98);
 return (just);
 }
-/**
-*main - mmain function
-*Return: 0
-*/
-int main()
-{
-malloc_checked();
-return (0);
-}
