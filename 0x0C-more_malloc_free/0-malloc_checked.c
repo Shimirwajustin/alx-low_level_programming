@@ -19,6 +19,6 @@ return (just);
 */
 int main()
 {
-*malooc();
+malloc_checked();
 return (0);
 }
