@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <unistd.h>
 #include <stdio.h>
 #include "main.h"
 
@@ -97,12 +98,12 @@ if (sol[h])
 l = 1;
 
 if (1)
-_putchar(sol[h] + '0');
+putchar(sol[h] + '0');
 }
 
 if (!l)
-_putchar('0');
-_putchar('\n');
+putchar('0');
+putchar('\n');
 free(sol);
 return (0);
 }
