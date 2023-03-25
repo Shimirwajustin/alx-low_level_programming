@@ -14,7 +14,7 @@ if (array && cmp)
 for (a = 0; a < size; a++)
 {
 if (cmp(array[a]) != 0)
-return (1);
+return (a);
 }
 }
 return (-1);
