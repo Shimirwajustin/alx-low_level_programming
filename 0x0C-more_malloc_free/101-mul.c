@@ -1,109 +1,89 @@
 #include <stdlib.h>
-#include <unistd.h>
 #include <stdio.h>
 #include "main.h"
-
 /**
-*just - a function that checks non_digit charactor
-*@z: string
-*Return: 0 or 1
+* is_digit - a function that checks if a string is avairable
+* @s: string to be evaluated
+* Return: 0 if a non-digit is found, 1 otherwise
 */
-
-int just(char *z)
+int is_digit(char *s)
 {
-int a = 0;
-
-while (z[a])
+int i = 0;
+while (s[i])
 {
-if (z[a] < '0' || z[a] > '9')
+if (s[i] < '0' || s[i] > '9')
 return (0);
-a++;
+i++;
 }
 return (1);
 }
-
 /**
-*shimwa - a function that returns the length of a string
-*@m: string
-*Return: not always 0
+* _strlen - returns the length of a string
+* @s: string to evaluate
+* Return: the length of the string
 */
-
-int shimwa(char *m)
+int _strlen(char *s)
 {
-int b = 0;
-
-while (m[b] != '\0')
+int i = 0;
+while (s[i] != '\0')
 {
-b++;
+i++;
 }
-return (b);
+return (i);
 }
-
 /**
-*jus - a function errors for the main function
-*Return: no return
+* errors - a function that handles errors for main
 */
-
-void jus(void)
+void errors(void)
 {
 printf("Error\n");
 exit(98);
 }
-
 /**
-*main - a function that multiplies two positive numbers
-*@argc: argument
-*@argv: array of argument
-*Return: always 0 in main
+* main - a function that multiplies two numbers
+* @argc: number of arguments
+* @argv: array of arguments
+* Return: always 0 (Success)
 */
-
 int main(int argc, char *argv[])
 {
-char *c, *d;
-int e, f, g, h, i, j, k, *sol, l = 0;
-c = argv[1];
-d = argv[2];
-
-if (argc != 3 || !just(c) | !just(d))
-jus();
-e = shimwa(c);
-f = shimwa(d);
-g = e + f + 1;
-sol = malloc(sizeof(int) * g);
-
-if (!sol)
+char *s1, *s2;
+int len1, len2, len, i, carry, digit1, digit2, *result, a = 0;
+s1 = argv[1], s2 = argv[2];
+if (argc != 3 || !is_digit(s1) || !is_digit(s2))
+errors();
+len1 = _strlen(s1);
+len2 = _strlen(s2);
+len = len1 + len2 + 1;
+result = malloc(sizeof(int) * len);
+if (!result)
 return (1);
-
-for (h = 0; h <= e + f; h++)
-sol[h] = 0;
-
-for (e = e - 1; e >= 0; e--)
+for (i = 0; i <= len1 + len2; i++)
+result[i] = 0;
+for (len1 = len1 - 1; len1 >= 0; len1--)
 {
-j = c[e] - '0';
-i = 0;
-
-for (f = shimwa(d) - 1; f >= 0; f--)
+digit1 = s1[len1] - '0';
+carry = 0;
+for (len2 = _strlen(s2) - 1; len2 >= 0; len2--)
 {
-k = d[f] - '0';
-i += sol[e + f + 1] + (j *k);
-sol[e + f + 1] = i % 10;
-i /= 10;
+digit2 = s2[len2] - '0';
+carry += result[len1 + len2 + 1] + (digit1 * digit2);
+result[len1 + len2 + 1] = carry % 10;
+carry /= 10;
 }
-if (i > 0)
-sol[e + f + 1] += i;
+if (carry > 0)
+result[len1 + len2 + 1] += carry;
 }
-for (h = 0; h < g - 1; h++)
+for (i = 0; i < len - 1; i++)
 {
-if (sol[h])
-l = 1;
-
-if (1)
-putchar(sol[h] + '0');
+if (result[i])
+a = 1;
+if (a)
+_putchar(result[i] + '0');
 }
-
-if (!l)
-putchar('0');
-putchar('\n');
-free(sol);
+if (!a)
+_putchar('0');
+_putchar('\n');
+free(result);
 return (0);
 }
