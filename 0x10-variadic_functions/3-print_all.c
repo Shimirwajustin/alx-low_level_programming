@@ -24,20 +24,20 @@ case 'i':
 printf("%s%d", shim, va_arg(list, int));
 break;
 case 'f':
-printf("%s%f", sep, va_arg(list, double));
+printf("%s%f", shim, va_arg(list, double));
 break;
 case 's':
-just = va_arg(lit, char *);
+just = va_arg(list, char *);
 if (!just)
 just = "(nil)";
 printf("%s%s", shim, just);
 break;
 default:
-i++;
+a++;
 continue;
 }
 shim = ", ";
-i++;
+a++;
 }
 }
 printf("\n");
