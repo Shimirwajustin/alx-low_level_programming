@@ -3,7 +3,8 @@
 /**
 * *malloc_checked - function
 *@b: argument
-*Return: not always 0
+
+* Return: not always 0
 */
 void *malloc_checked(unsigned int b)
 {
