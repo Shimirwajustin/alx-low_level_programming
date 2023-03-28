@@ -1,4 +1,4 @@
-#include "varadic_functions.h"
+#include "variadic_functions.h"
 /**
 *print_numbers- a function that prints the given numbers
 *@separator: string
@@ -17,7 +17,7 @@ printf("%d", va_arg(list, int));
 else if (separator && a == 0)
 printf("%d", va_arg(list, int));
 else
-printf("%s7d", separator, va_arg(list, int));
+printf("%s%d", separator, va_arg(list, int));
 }
 va_end(list);
 printf("\n");
