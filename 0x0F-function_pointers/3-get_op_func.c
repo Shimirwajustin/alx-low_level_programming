@@ -1,4 +1,5 @@
 #include "3-calc.h"
+#include <stdlib.h>
 /**
 *get_op_func - function pointer
 *@s: the operator
@@ -7,7 +8,7 @@
 int (*get_op_func(char *s))(int, int)
 {
 opt_t ops[] = {
-{"+", o_add},
+{"+", op_add},
 {"-", op_sub},
 {"*", op_mul},
 {"/", op_div},
@@ -16,11 +17,7 @@ opt_t ops[] = {
 };
 int t;
 t = 0;
-while (ops[t].op)
-{
-if (srtrcmp(ops[t].op, s) == 0)
-return (ops[t].f);
+while (ops[t].op != NULL && *(ops[t].op) != *s)
 t++;
-}
-return (NULL);
+return (ops[t].f);
 }

@@ -1,3 +1,6 @@
+#include "function_pointers.h"
+#include <stdlib.h>
+#include <stdio.h>
 #include "3-calc.h"
 /**
 *main - main program
@@ -5,30 +8,28 @@
 *@argv: an array
 *Return: always 0 in main function
 */
-int main(int argc, char *argv[])
+int main(int __attribute__((__unused__)) argc, char *argv[])
 {
-int t, y, sol;
-char c;
-int (*func)(int, int);
+int t, y;
+char *op;
 if (argc != 4)
 {
 printf("Error\n");
 exit(98);
 }
-t = atoi(arg[1]);
+t = atoi(argv[1]);
+op = argv[2];
 y = atoi(argv[3]);
-func = get_op_func(argv[2]);
-if (!func)
+if (get_op_func(op) == NULL || op[1] != '\0')
 {
 printf("Error\n");
 exit(99);
 }
-c = *argv[2];
-if ((c == '/' || c == '%') && y == 0)
+if ((*op == '/' && y == 0) || (*op == '%' && y == 0))
 {
 printf("Error\n");
 exit(100);
 }
-sol = func(t, y);
+printf("%d\n", get_op_func(op)(t, y));
 return (0);
 }
