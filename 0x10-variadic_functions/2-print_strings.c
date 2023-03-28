@@ -7,7 +7,7 @@
 */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-unsign int a;
+unsigned int a;
 char *just;
 va_list list;
 va_start(list, n);
@@ -18,7 +18,7 @@ if (!just)
 just = "(nil)";
 if (!separator)
 printf("%s", just);
-else if (separator && i == 0)
+else if (separator && a == 0)
 printf("%s", just);
 else
 printf("%s%s", separator, just);
