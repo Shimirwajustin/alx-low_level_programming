@@ -1,56 +1,50 @@
 #include "3-calc.h"
 
-int op_add(int a, int b);
-int op_sub(int a, int b);
-int op_mul(int a, int b);
-int op_div(int a, int b);
-int op_mod(int a, int b);
-
 /**
-*op_add - function of addition
-*@a: integer
-*@b: inter
-*Return: return sum
+* op_add - function that calculates the sum of two integers
+* @a: first integer
+* @b: second integer
+* Return: sum of a and b
 */
 int op_add(int a, int b)
 {
 return (a + b);
 }
 /**
-*op_sub - function of difference
-*@a: integer
-*@b: integer
-*Return: return difference
+* op_sub - function that calculates the difference of two integers
+* @a: first integer
+* @b: second integer
+* Return: difference of a and b
 */
 int op_sub(int a, int b)
 {
 return (a - b);
 }
 /**
-*op_mul - calculates the product
-*@a: integer
-*@b: integer
-*Return: return product
+* op_mul - funtion that calculates the product of two integers
+* @a: first integer
+* @b: second integer
+* Return: product of a and b
 */
-int op_sub(int a, int b)
+int op_mul(int a, int b)
 {
 return (a * b);
 }
 /**
-*op_div - function of division
-*@a: integer
-*@b: integer
-*Return: return division
+* op_div - function that calculates the division of two integers
+* @a: first integer
+* @b: second integer
+* Return: result of the division of a and b
 */
 int op_div(int a, int b)
 {
 return (a / b);
 }
 /**
-*op_mod - function of modulo
-*@a: integer
-*@b: integer
-*Return: return of modulo
+* op_mod - function that calculates the remainder of the division of two integers
+* @a: first integer
+* @b: second integer
+* Return: remainder of a divided b
 */
 int op_mod(int a, int b)
 {
