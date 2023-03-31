@@ -2,7 +2,6 @@
 #include <string.h>
 #include "lists.h"
 /**
- *
  *add_node_end - function that adds a new node at the end of a linked list
  *@head: double pointer
  *@str: string
