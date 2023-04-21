@@ -14,7 +14,8 @@ op_t ops[] = {
 {"%", op_mod},
 {NULL, NULL}
 };
-int a = 0;
+int a;
+a = 0;
 while (ops[a].op)
 {
 if (strcmp(ops[a].op, s) == 0)
