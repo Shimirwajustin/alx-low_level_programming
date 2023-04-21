@@ -9,11 +9,12 @@
 */
 int int_index(int *array, int size, int (*cmp)(int))
 {
+int a;
 if (array && cmp)
 {
-for (int i = 0; i < size; i++)
-if (cmp(array[i]) != 0)
-return (i);
+for (a = 0; a < size; a++)
+if (cmp(array[a]) != 0)
+return (a);
 }
 return (-1);
 }
