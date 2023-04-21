@@ -31,7 +31,7 @@ if (a == just - 1)
 printf("%02hhx\n", shim[a]);
 break;
 }
-printf("%02hhx", shim[a]);
+printf("%02hhx ", shim[a]);
 }
 return (0);
 }
