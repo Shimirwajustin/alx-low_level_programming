@@ -3,8 +3,7 @@
 * _strcmp - compare string values
 *@s1: input value
 *@s2: input value
-*return: s1[a] - s2[a]
-*return: 0
+*Return:return arrays and 0
 */
 int _strcmp(char *s1, char *s2)
 {
