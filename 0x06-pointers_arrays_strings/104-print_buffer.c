@@ -35,17 +35,17 @@ putchar('.');
 */
 void print_buffer(char *b, int size)
 {
-int c;
-for (c = 0; c <= (size - 1) / 10 && size; c++)
+int d;
+for (d = 0; d <= (size - 1) / 10 && size; d++)
 {
-printf("%08x: ", c * 10);
-if (c < size / 10)
+printf("%08x: ", d * 10);
+if (d < size / 10)
 {
-print_line(b, 9, c);
+print_line(b, 9, d);
 }
 else
 {
-print_line(b, size % 10 - 1, c);
+print_line(b, size % 10 - 1, d);
 }
 putchar('\n');
 }
