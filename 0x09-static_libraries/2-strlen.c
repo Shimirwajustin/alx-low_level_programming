@@ -4,7 +4,7 @@
  *@s: pointer
  *Return: integer
  */
-int _strlen(cchar *s)
+int _strlen(char *s)
 {
 int a;
 a = 0;

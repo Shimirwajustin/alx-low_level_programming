@@ -1,4 +1,4 @@
-#include "main..h"
+#include "main.h"
 /**
  *_memcpy - a function
  *@dest: 1st array
