@@ -22,7 +22,7 @@ while (*e != 0)
 if (*e < 47 || *e > 57)
 {
 printf("%s\n", d);
-return 1;
+return (1);
 }
 e++;
 }
