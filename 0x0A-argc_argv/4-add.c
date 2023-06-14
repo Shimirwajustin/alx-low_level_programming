@@ -8,9 +8,7 @@
 */
 int main(int argc, char *argv[])
 {
-int a;
-int b = 0;
-int c = 0;
+int a, b = 0, c = 0;
 char d[] = "Error", *e;
 if (argc > 1)
 {
