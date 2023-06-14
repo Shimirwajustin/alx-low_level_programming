@@ -9,8 +9,7 @@
 
 int main(int argc, char *argv[])
 {
-int a = 0;
-int b = 0;
+int a = 0, b = 0;
 char d[] = "Error";
 
 if (argc != 2)
@@ -32,6 +31,11 @@ b++;
 while (a >= 5)
 {
 a -= 5;
+b++;
+}
+while (a >= 1)
+{
+a -= 2;
 b++;
 }
 if (a == 1)
