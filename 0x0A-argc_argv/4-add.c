@@ -11,8 +11,7 @@ int main(int argc, char *argv[])
 int a;
 int b = 0;
 int c = 0;
-char d[] = "Error";
-char *e;
+char d[] = "Error", *e;
 if (argc > 1)
 {
 for (a = 1; a < argc; a++)
