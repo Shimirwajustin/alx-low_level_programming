@@ -14,7 +14,7 @@ if (argc > 1)
 {
 for (a = 1; a < argc; a++)
 {
-e = argv[1];
+e = argv[a];
 while (*e != 0)
 {
 if (*e < 47 || *e > 57)
