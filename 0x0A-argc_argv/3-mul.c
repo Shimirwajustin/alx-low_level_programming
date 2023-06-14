@@ -19,7 +19,7 @@ int a, b;
 a = atoi(argv[1]);
 b = atoi(argv[2]);
 int c;
-c = a + b;
+c = a * b;
 printf("%d", result);
 printf("\n");
 return 0;
