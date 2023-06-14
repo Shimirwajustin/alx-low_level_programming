@@ -9,19 +9,16 @@
 */
 int main(int argc, char *argv[])
 {
-int a;
-char b[];
-a = 0;
-b[]= "Error";
+int a = 0;
+char b[] = "Error";
+
 if (argc != 3)
 {
-printf("%s", b);
-printf("\n");
+printf("%s\n", b);
 return 1;
 }
 a = atoi(argv[1]) * atoi(argv[2]);
-printf("%i", a);
-printf("\n");
+printf("%i\n", a);
 return 0;
 }
 
