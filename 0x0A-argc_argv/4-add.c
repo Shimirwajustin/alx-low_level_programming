@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-*main- function
+*main - function
 *@argc: integer
 *@argv: an array
 *Return: 1 & 0
