@@ -17,7 +17,7 @@ e = 0;
 while (s1 && s1[d])
 d++;
 while (s2 && s2[e])
-e++;	
+e++;
 a = malloc(sizeof(char) * (d + e + 1));
 
 if (a == NULL)
