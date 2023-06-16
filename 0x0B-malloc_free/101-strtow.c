@@ -20,5 +20,5 @@ a = 1;
 c++;
 }
 }
-return (c);
+return (str);
 }
