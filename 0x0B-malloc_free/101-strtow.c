@@ -5,14 +5,14 @@
  *@s: an array
  *Return: not always 0
  */
-int count_word(char *s)
+char **strtow (char *str)
 {
 int a, b, c;
 a = 0;
 c = 0;
-for (b = 0; s[b] != '\0'; b++)
+for (b = 0; str[b] != '\0'; b++)
 {
-if (s[b] == ' ')
+if (str[b] == ' ')
 a = 0;
 else if (a == 0)
 {
