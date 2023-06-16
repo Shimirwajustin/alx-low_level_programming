@@ -25,7 +25,7 @@ b++;
 d++;
 a++;
 }
-e = malloc((sizeof(char) * d) + 1);
+e = malloc((sizeof(char) * d) +1);
 if (e == NULL)
 return (NULL);
 a = 0;
