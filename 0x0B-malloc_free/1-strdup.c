@@ -18,7 +18,7 @@ c++;
 a = malloc(sizeof(char) * (c + 1));
 
 if (a == NULL)
-return(NULL);
+return (NULL);
 
 while ((a[b] = str[b]) != '\0')
 b++;
