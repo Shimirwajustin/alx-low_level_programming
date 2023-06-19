@@ -13,7 +13,7 @@ int *a, b, c;
 if (min > max)
 return (NULL);
 
-c = max - min +1;
+c = max - min + 1;
 a = malloc(sizeof(int) * c);
 if (a == NULL)
 return (NULL);
