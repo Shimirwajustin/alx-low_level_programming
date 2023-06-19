@@ -32,7 +32,7 @@ return (NULL);
 
 c = malloc(size * nmemb);
 
-if (c == NULL);
+if (c == NULL)
 return (NULL);
 
 per(c, 0, nmemb * size);
