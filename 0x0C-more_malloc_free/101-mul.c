@@ -92,15 +92,12 @@ for (g = 0; g < f - 1; g++)
 
 if (l[g])
 m = 1;
-
 if (m)
 _putchar(l[g] + '0');
 }
-
 if (!m)
 _putchar('0');
 _putchar('\n');
 free(l);
-
 return (0);
 }
