@@ -19,10 +19,10 @@ return (a);
 
 /**
 **just - a function
-* @d: pointer 1
-* @c: pointer 2
-* Return: not always 0
- */
+*@d: pointer 1
+*@c: pointer 2
+*Return: not always 0
+*/
 char *just(char *d, char *c)
 {
 int a = 0, b;
@@ -54,13 +54,13 @@ b = shim(owner);
 chien = malloc(sizeof(dog_t));
 if (chien == NULL)
 return (NULL);
-chien->name = malloc(sizeof(char) * (a + 1));
+chien->name = malloc(sizeof(char) * (a +1));
 if (chien->name == NULL)
 {
 free(chien);
 return (NULL);
 }
-chien->owner = malloc(sizeof(char) * (b + 1));
+chien->owner = malloc(sizeof(char) * (b +1));
 if (chien->owner == NULL)
 {
 free(chien);
