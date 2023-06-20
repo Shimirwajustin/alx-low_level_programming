@@ -3,7 +3,7 @@
 
 /**
 *shim - a function
-*@s: pointer
+*@b: pointer
 *Return: not always 0
 */
 int shim(char *b)
@@ -54,13 +54,13 @@ b = shim(owner);
 chien = malloc(sizeof(dog_t));
 if (chien == NULL)
 return (NULL);
-chien->name = malloc(sizeof(char) * (a +1));
+chien->name = malloc(sizeof(char) * (a + 1));
 if (chien->name == NULL)
 {
 free(chien);
 return (NULL);
 }
-chien->owner = malloc(sizeof(char) * (b +1));
+chien->owner = malloc(sizeof(char) * (b + 1));
 if (chien->owner == NULL)
 {
 free(chien);
