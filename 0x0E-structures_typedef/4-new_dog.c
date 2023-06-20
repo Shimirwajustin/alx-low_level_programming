@@ -39,7 +39,7 @@ return (d);
 }
 
 /**
-*new_dog - function
+**new_dog - function
 *@name: pointer 1
 *@age: age
 *@owner: pointer 2
