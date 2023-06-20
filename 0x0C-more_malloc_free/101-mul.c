@@ -37,7 +37,7 @@ return (a);
 }
 
 /**
-* errors - a function
+*errors - a function
 */
 void errors(void)
 {
