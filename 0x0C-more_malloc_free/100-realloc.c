@@ -9,8 +9,9 @@
 */
 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
+char *p;
 {
-int *p;
+char *p;
 char *b;
 unsigned int c;
 
