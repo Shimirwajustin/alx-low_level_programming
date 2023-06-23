@@ -9,9 +9,9 @@ int sum_them_all(const unsigned int n, ...)
 unsigned int a;
 int add = 0;
 va_list b;
-va_list(list, n);
+va_start(b, n);
 for (a = 0; a < n; a++)
-add += va_arg(list, int);
+add += va_arg(b, int);
 va_end(b);
 return (add);
 }
