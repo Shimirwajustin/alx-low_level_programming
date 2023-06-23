@@ -15,9 +15,7 @@ va_start(b, n);
 
 for (a = 0; a < n; a++)
 add += va_arg(b, int);
-
 va_end(b);
-
 return (add);
 }
 

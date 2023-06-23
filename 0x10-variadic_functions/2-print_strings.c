@@ -12,9 +12,9 @@ va_list c;
 va_start(c, n);
 for (a = 0; a < n; a++)
 {
-str = va_arg(c, char *);
+b = va_arg(c, char *);
 if (!b)
-str = "(nil)";
+b = "(nil)";
 if (!separator)
 printf("%s", b);
 else if (separator && a == 0)
