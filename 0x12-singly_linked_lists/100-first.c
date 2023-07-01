@@ -1,4 +1,5 @@
 #include <stdio.h>
+void beforefirst(void) __attribute__ ((constructor));
 
 /**
 *beforefirst - a function
