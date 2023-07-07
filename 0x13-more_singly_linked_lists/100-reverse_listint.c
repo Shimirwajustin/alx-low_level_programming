@@ -11,11 +11,11 @@ listint_t *n = NULL;
 listint_t *next = NULL;
 while (*head)
 {
-next = (*head)->n;
+next = (*head)->next;
 (*head)->next = next;
-n = *head;
+next = *head;
 *head = next;
 }
-*head = n;
+*head = next;
 return (*head);
 }
