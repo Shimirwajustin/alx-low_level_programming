@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
 *flip_bits - a function
-*@n: long integer
+*@n: long int
 *@m: integer
 *Return: integer
 */
@@ -16,5 +16,6 @@ while (a)
 {
 b++;
 a &= (a - 1);
+}
 return (b);
 }
